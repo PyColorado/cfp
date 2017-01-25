@@ -19,6 +19,7 @@ class Proposal < ActiveRecord::Base
   validates :title, :abstract, :headshot, :github, presence: true
   validates :abstract, length: {maximum: 600}
   validates :existing_talk, inclusion: { in: [true, false], message: "Please specify whether you have given this talk before" }
+  validates :travel_reimbursements, inclusion: { in: [true, false], message: "Please specify whether you will need travel reimbursements" }
 
   serialize :last_change
   serialize :proposal_data, Hash
@@ -272,6 +273,7 @@ end
 #  twitter               :string(255)
 #  video_pitch           :string(255)
 #  headshot              :string(255)
+#  travel_reimbursements :boolean          default(FALSE)
 #
 # Indexes
 #

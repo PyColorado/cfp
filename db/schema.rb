@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151109195644) do
+ActiveRecord::Schema.define(version: 20170125023450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -135,6 +135,7 @@ ActiveRecord::Schema.define(version: 20151109195644) do
     t.string   "twitter"
     t.string   "video_pitch"
     t.string   "headshot"
+    t.boolean  "travel_reimbursements", default: false
   end
 
   add_index "proposals", ["event_id"], name: "index_proposals_on_event_id", using: :btree
