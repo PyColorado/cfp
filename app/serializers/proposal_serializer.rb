@@ -26,6 +26,7 @@
 #  video_pitch           :string(255)
 #  headshot              :string(255)
 #  travel_reimbursements :boolean          default(FALSE)
+#  minority              :boolean
 #
 # Indexes
 #

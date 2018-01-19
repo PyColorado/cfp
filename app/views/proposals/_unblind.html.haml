@@ -36,3 +36,6 @@
     %dt Will you need travel expenses reimbursed?
     %dd= proposal.travel_reimbursements ? "Yes" : "No"
 
+  %dt Are you a minority?
+  %dd= proposal.minority == true ? "Yes" : (proposal.minority == false ? "No" : "N/A")
+
