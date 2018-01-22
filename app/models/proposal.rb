@@ -254,7 +254,7 @@ end
 #  event_id              :integer
 #  state                 :string(255)      default("submitted")
 #  uuid                  :string(255)
-#  title                 :string(255)
+#  title                 :text
 #  abstract              :text
 #  details               :text
 #  pitch                 :text
@@ -267,12 +267,12 @@ end
 #  proposal_data         :text
 #  existing_talk         :boolean
 #  online_recordings     :text
-#  location              :string(255)
-#  website               :string(255)
-#  github                :string(255)
-#  twitter               :string(255)
-#  video_pitch           :string(255)
-#  headshot              :string(255)
+#  location              :text
+#  website               :text
+#  github                :text
+#  twitter               :text
+#  video_pitch           :text
+#  headshot              :text
 #  travel_reimbursements :boolean          default(FALSE)
 #  minority              :boolean
 #

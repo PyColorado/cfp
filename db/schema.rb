@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180118235201) do
+ActiveRecord::Schema.define(version: 20180122192829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -116,7 +116,7 @@ ActiveRecord::Schema.define(version: 20180118235201) do
     t.integer  "event_id"
     t.string   "state",                 default: "submitted"
     t.string   "uuid"
-    t.string   "title"
+    t.text     "title"
     t.text     "abstract"
     t.text     "details"
     t.text     "pitch"
@@ -129,12 +129,12 @@ ActiveRecord::Schema.define(version: 20180118235201) do
     t.text     "proposal_data"
     t.boolean  "existing_talk"
     t.text     "online_recordings"
-    t.string   "location"
-    t.string   "website"
-    t.string   "github"
-    t.string   "twitter"
-    t.string   "video_pitch"
-    t.string   "headshot"
+    t.text     "location"
+    t.text     "website"
+    t.text     "github"
+    t.text     "twitter"
+    t.text     "video_pitch"
+    t.text     "headshot"
     t.boolean  "travel_reimbursements", default: false
     t.boolean  "minority"
   end
