@@ -29,6 +29,8 @@ gem 'simple_form', '3.1.0.rc1'
 
 gem 'zeroclipboard-rails'
 
+gem 'responders', '~> 2.0'
+
 group :production do
   gem 'rails_12factor'
   gem 'rack-timeout', '~> 0.2.4'
