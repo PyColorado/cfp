@@ -32,6 +32,7 @@ gem 'zeroclipboard-rails'
 group :production do
   gem 'rails_12factor'
   gem 'rack-timeout', '~> 0.2.4'
+  gem 'pg'
 end
 
 group :development do
