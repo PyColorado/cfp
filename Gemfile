@@ -4,7 +4,7 @@ ruby '2.4.5'
 gem 'rails', '>= 4.2.4'
 gem 'puma', '~> 2.9.1'
 
-gem 'pg'
+gem 'pg', '~> 0.20'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -32,7 +32,6 @@ gem 'zeroclipboard-rails'
 group :production do
   gem 'rails_12factor'
   gem 'rack-timeout', '~> 0.2.4'
-  gem 'pg'
 end
 
 group :development do
