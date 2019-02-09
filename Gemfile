@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.4.5'
 
-gem 'rails', '4.1.2'
-gem 'puma', '~> 2.13'
+gem 'rails', '>= 4.2.4'
+gem 'puma', '~> 2.9.1'
 
-gem 'pg'
+gem 'pg', '~> 0.20'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -28,6 +28,8 @@ gem 'draper'
 gem 'simple_form', '3.1.0.rc1'
 
 gem 'zeroclipboard-rails'
+
+gem 'responders', '~> 2.0'
 
 group :production do
   gem 'rails_12factor'
