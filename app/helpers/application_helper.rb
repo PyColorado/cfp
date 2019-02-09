@@ -2,7 +2,7 @@ module ApplicationHelper
 
   def title
     if @title.blank?
-      "Dinosaur.js Call for Proposals"
+      "PyColorado Call for Proposals"
     else
       @title
     end
